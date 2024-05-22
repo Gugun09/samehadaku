@@ -1,0 +1,11 @@
+[Unit]
+Description=Update Anime Terbaru
+
+[Service]
+ExecStart=/usr/local/bin/update
+WorkingDirectory=/usr/local/bin/
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
